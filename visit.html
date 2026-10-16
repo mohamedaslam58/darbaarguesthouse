@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Visiting places around Ervadi</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
+        rel="stylesheet">
+    <!-- CSS LIBRARY -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/gallery.css">
+    <link rel="stylesheet" type="text/css" href="css/vit-gallery.css">
+    <link rel="shortcut icon" type="text/css" href="images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css" />
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header-sky">
+        <div class="container">
+            <!--HEADER-TOP-->
+            <div class="header-top no-border">
+                <div class="header-top-left">
+                    <!-- <span><i class="ion-android-cloud-outline"></i>18 °C</span> -->
+                    <span><i class="ion-ios-location-outline"></i> Ervadi Dharga, Ramanathapuram, Tamilnadu</span>
+                    <span><i class="fa fa-phone" aria-hidden="true"></i> 9994131915</span>
+                </div>
+            </div>
+            <!-- END/HEADER-TOP -->
+        </div>
+        <!-- MENU-HEADER -->
+        <div class="menu-header ">
+            <nav class="navbar navbar-fixed-top bg-menu">
+                <div class="container">
+                    <div class="navbar-header ">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar "></span>
+                            <span class="icon-bar "></span>
+                            <span class="icon-bar "></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html" title="Skyline"><img
+                                src="images/Home+/darbaar_logo.png" alt="#"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main-navbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="index.html" title="Home">Home</a></li>
+                            <li><a href="room.html" title="Room & Rate">Room & Rate</a></li>
+                            <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+                            <li><a href="services.html" title="Services">Services</a></li>
+
+                            <!-- Grouped Destination/Local Links into a Clean Dropdown -->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Explore <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="dargahs.html" title="List of Dargahs">List of Dargahs</a></li>
+                                    <li><a href="uroos.html" title="Uroos Festival">Uroos Festival</a></li>
+                                    <li><a href="visit.html" title="Places to Visit">Places to Visit</a></li>
+                                    <li><a href="specialties.html" title="Ervadi Specialties">Ervadi Specialties</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="about.html" title="About">About</a></li>
+                            <li><a href="contact.html" title="Contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- END / MENU-HEADER -->
+    </header>
+    <!-- END-HEADER -->
+
+    <section class="banner-tems text-center">
+        <div class="container">
+            <div class="banner-content">
+                <h2 style="color: black;">Explore Ramanathapuram & Ervadi</h2>
+                <p style="color: black; padding: 32px 90px;">Ervadi is a historic coastal town in Tamil Nadu known for its spiritual heritage, eco-tourism spots, serene beaches, and rich cultural landmarks.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filter Bar -->
+    <section style="background: #ffffff; padding: 20px 0; border-bottom: 1px solid #e0e0e0; margin-bottom: 40px;">
+        <div class="container text-center">
+            <ul class="visit-filter-list" style="list-style: none; padding: 0; margin: 0; display: inline-flex; flex-wrap: wrap; gap: 10px;">
+                <li><button class="btn btn-default filter-btn active" data-filter="all">All Places</button></li>
+                <li><button class="btn btn-default filter-btn" data-filter="spiritual">Spiritual & Cultural</button></li>
+                <li><button class="btn btn-default filter-btn" data-filter="nature">Nature & Beaches</button></li>
+                <li><button class="btn btn-default filter-btn" data-filter="nearby">Nearby Attractions</button></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <section class="visit-places-grid pb-5" style="padding-bottom: 60px;">
+        <div class="container">
+            <div class="row" id="visit-cards-container">
+
+                <!-- 1. Ervadi Dargah -->
+                <div class="col-md-4 col-sm-6 visit-card-item" data-category="spiritual" style="margin-bottom: 30px;">
+                    <div class="place-card">
+                        <div class="card-img-holder">
+                            <img src="images/Home+/services-5.png" alt="Ervadi Dargah" class="img-responsive">
+                            <span class="badge-cat bg-green">Spiritual</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="rating-bar">
+                                <i class="fa fa-star text-gold"></i> <strong>4.6</strong> <span class="text-muted">(1.4K reviews)</span>
+                            </div>
+                            <h3>Ervadi Dargah Main Shrine</h3>
+                            <p>An 800-year-old tomb and shrine of Hazrat Sultan Syed Ibrahim Shaheed Badusha, an 18th-generation descendant of Prophet Muhammad. Draws pilgrims from across India, especially during December Sandanakoodu.</p>
+                            <a href="https://maps.google.com/?q=Ervadi+Dargah" target="_blank" class="btn-directions">
+                                <i class="fa fa-map-marker"></i> Get Directions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Manal Thittu Eco Tourism -->
+                <div class="col-md-4 col-sm-6 visit-card-item" data-category="nature" style="margin-bottom: 30px;">
+                    <div class="place-card">
+                        <div class="card-img-holder">
+                            <img src="images/Visit/manal-thittu.jpg" alt="Manal Thittu Eco Tourism" class="img-responsive">
+                            <span class="badge-cat bg-gold">Nature & Eco</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Manal Thittu Eco Tourism</h3>
+                            <p>Located in Pichaimoopanvalasai within Ervadi, offering unique local ecological experiences, scenic coastal landscapes, and serene views along Palk Bay.</p>
+                            <a href="https://maps.google.com/?q=Pichaimoopanvalasai+Ervadi" target="_blank" class="btn-directions">
+                                <i class="fa fa-map-marker"></i> Get Directions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Coral Reef Boating / Island Boating -->
+                <div class="col-md-4 col-sm-6 visit-card-item" data-category="nature" style="margin-bottom: 30px;">
+                    <div class="place-card">
+                        <div class="card-img-holder">
+                            <img src="images/Visit/boating.jpg" alt="Coral Reef Boating" class="img-responsive">
+                            <span class="badge-cat bg-gold">Boating & Marine</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Coral Reef & Island Boating</h3>
+                            <p>Pichaimoopanvalasai and nearby coastal stretches offer localized boating trips and marine sightseeing through surrounding shallow waters and coral reefs.</p>
+                            <a href="https://maps.google.com/?q=Pichaimoopanvalasai+Ervadi" target="_blank" class="btn-directions">
+                                <i class="fa fa-map-marker"></i> Get Directions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Kannadi Vappa Beach & Local Seashores -->
+                <div class="col-md-4 col-sm-6 visit-card-item" data-category="nature" style="margin-bottom: 30px;">
+                    <div class="place-card">
+                        <div class="card-img-holder">
+                            <img src="images/Visit/kannadi_vaapa" alt="Kannadi Vappa Beach" class="img-responsive">
+                            <span class="badge-cat bg-gold">Seashore</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Kannadi Vappa Beach</h3>
+                            <p>Located nearby in Kilakarai, offering peaceful seaside views along the Gulf of Mannar biosphere. Ideal for quiet evening walks and coastal breezes.</p>
+                            <a href="https://maps.google.com/?q=Kannadi+Vappa+Beach+Kilakarai" target="_blank" class="btn-directions">
+                                <i class="fa fa-map-marker"></i> Get Directions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Rameswaram Island & Dhanushkodi -->
+                <div class="col-md-4 col-sm-6 visit-card-item" data-category="nearby" style="margin-bottom: 30px;">
+                    <div class="place-card">
+                        <div class="card-img-holder">
+                            <img src="images/Visit/dhanushkodi.jpg" alt="Rameswaram" class="img-responsive">
+                            <span class="badge-cat bg-blue">87 km Away</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Rameswaram & Dhanushkodi</h3>
+                            <p>Famous destination housing the Ramanatha Swamy Temple, historic Pamban Sea Bridge, Dhanushkodi Beach Point, and Dr. A.P.J. Abdul Kalam Memorial.</p>
+                            <a href="https://maps.google.com/?q=Rameswaram+Tamil+Nadu" target="_blank" class="btn-directions">
+                                <i class="fa fa-map-marker"></i> Get Directions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Ariyaman Beach -->
+                <div class="col-md-4 col-sm-6 visit-card-item" data-category="nearby" style="margin-bottom: 30px;">
+                    <div class="place-card">
+                        <div class="card-img-holder">
+                            <img src="images/Visit/ariyaman.jpg" alt="Ariyaman Beach" class="img-responsive">
+                            <span class="badge-cat bg-blue">Nearby Beach</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Ariyaman Beach</h3>
+                            <p>A popular, well-maintained sandy beach in Ramanathapuram district, perfect for families, water sports, swimming, and leisure picnics under Casuarina trees.</p>
+                            <a href="https://maps.google.com/?q=Ariyaman+Beach" target="_blank" class="btn-directions">
+                                <i class="fa fa-map-marker"></i> Get Directions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Ramalingavilasam Palace -->
+                <div class="col-md-4 col-sm-6 visit-card-item" data-category="nearby" style="margin-bottom: 30px;">
+                    <div class="place-card">
+                        <div class="card-img-holder">
+                            <img src="images/Visit/ramalingavilasam.jpg" alt="Ramalingavilasam Palace" class="img-responsive">
+                            <span class="badge-cat bg-blue">Heritage</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Ramalingavilasam Palace</h3>
+                            <p>A historic palace located in Ramanathapuram town featuring royal heritage architecture, ancient weapons, and intricate traditional mural paintings.</p>
+                            <a href="https://maps.google.com/?q=Ramalingavilasam+Palace+Ramanathapuram" target="_blank" class="btn-directions">
+                                <i class="fa fa-map-marker"></i> Get Directions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Uthirakosamangai Temple -->
+                <div class="col-md-4 col-sm-6 visit-card-item" data-category="nearby" style="margin-bottom: 30px;">
+                    <div class="place-card">
+                        <div class="card-img-holder">
+                            <img src="images/Visit/utharakosamangai.jpg" alt="Uthirakosamangai Temple" class="img-responsive">
+                            <span class="badge-cat bg-blue">Ancient Temple</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Uthirakosamangai Temple</h3>
+                            <p>An ancient Shiva temple tower known for its thousands of years of history and the world's unique single emerald-stone (Maragatha) Nataraja idol.</p>
+                            <a href="https://maps.google.com/?q=Uthirakosamangai+Temple" target="_blank" class="btn-directions">
+                                <i class="fa fa-map-marker"></i> Get Directions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. Gulf of Mannar Marine National Park -->
+                <div class="col-md-4 col-sm-6 visit-card-item" data-category="nearby" style="margin-bottom: 30px;">
+                    <div class="place-card">
+                        <div class="card-img-holder">
+                            <img src="images/Visit/gulf-of-mannar.jpg" alt="Gulf of Mannar" class="img-responsive">
+                            <span class="badge-cat bg-blue">Marine Park</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Gulf of Mannar Marine Park</h3>
+                            <p>A protected biosphere reserve featuring Krusadai Island, rich coral reef ecosystems, marine bio-diversity, dugongs, and rare migratory bird species.</p>
+                            <a href="https://maps.google.com/?q=Gulf+of+Mannar+Marine+National+Park" target="_blank" class="btn-directions">
+                                <i class="fa fa-map-marker"></i> Get Directions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for Filtering Cards -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const filterBtns = document.querySelectorAll(".filter-btn");
+            const cards = document.querySelectorAll(".visit-card-item");
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener("click", function () {
+                    filterBtns.forEach(b => b.classList.remove("active"));
+                    this.classList.add("active");
+
+                    const category = this.getAttribute("data-filter");
+
+                    cards.forEach(card => {
+                        if (category === "all" || card.getAttribute("data-category") === category) {
+                            card.style.display = "block";
+                        } else {
+                            card.style.display = "none";
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+    <!-- Floating Trigger Button -->
+<button class="quran-float-btn" id="openQuranModalBtn" aria-label="Open Quranic Reflections">
+    <i class="fa fa-book"></i> Spiritual Reflections
+</button>
+
+<!-- Quran Verses Modal -->
+<div id="quranModal" class="quran-modal-overlay">
+    <div class="quran-modal-container">
+        
+        <!-- Modal Header -->
+        <div class="quran-modal-header">
+            <div>
+                <h2>Verses from the Holy Quran</h2>
+            </div>
+            <button class="quran-modal-close" id="closeQuranModalBtn">&times;</button>
+        </div>
+
+        <!-- Language Selector Tabs -->
+        <div class="quran-lang-tabs">
+            <button class="lang-btn active" onclick="switchQuranLang('en')">English</button>
+            <button class="lang-btn" onclick="switchQuranLang('ar')">العربية</button>
+            <button class="lang-btn" onclick="switchQuranLang('ta')">தமிழ்</button>
+            <button class="lang-btn" onclick="switchQuranLang('ml')">മലയാളം</button>
+        </div>
+
+        <!-- Modal Body / Verses Container -->
+        <div class="quran-modal-body" id="quranVersesContainer">
+            <!-- Verses rendered dynamically via JavaScript -->
+        </div>
+
+    </div>
+</div>
+
+    <!--FOOTER-->
+    <footer class="footer-sky">
+        <div class="footer-mid">
+            <div class="container">
+                <div class="row padding-footer-mid">
+
+                    <!-- Column 1: Logo & Brief Description -->
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="footer-logo list-content">
+                            <a href="index.html" title="Darbaar Guest House">
+                                <img src="images/Home+/darbaar_logo-footer.png" alt="Darbaar Guest House"
+                                    class="img-responsive footer-brand-img">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Quick Links -->
+                    <div class="col-xs-6 col-sm-3 col-md-2 col-md-offset-1">
+                        <div class="list-content">
+                            <h4 class="footer-heading">Quick Links</h4>
+                            <ul class="footer-links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="room.html">Rooms & Rates</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Column 3: Support & Policies -->
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <div class="list-content">
+                            <h4 class="footer-heading">Support & Info</h4>
+                            <ul class="footer-links">
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Column 4: Contact & Direct Booking -->
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="list-content contact-info-widget">
+                            <h4 class="footer-heading">Contact Us</h4>
+                            <ul class="footer-contact-list">
+                                <li>
+                                    <i class="fa fa-map-marker text-gold"></i>
+                                    <span>Ervadi Dargah, Ramanathapuram, Tamil Nadu</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone text-gold"></i>
+                                    <a href="tel:+919994131915">+91 99941 31915</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Footer Bottom Bar -->
+                <div class="footer-bottom clearfix">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-7 text-left">
+                            <p class="copyright-text">
+                                Copyright © 2026 <strong>Darbaar Guest House</strong>. All Rights Reserved.
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-5 text-right">
+                            <p class="copyright-location">
+                                Ervadi, Ramanathapuram, Tamil Nadu
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- END / FOOTER-->
+
+    <!--SCOLL TOP-->
+    <a href="#" title="sroll" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
+    <!--END / SROLL TOP-->
+
+    <!-- LOAD JQUERY -->
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/vit-gallery.js"></script>
+    <script type="text/javascript" src="js/jquery.countTo.js"></script>
+    <script type="text/javascript" src="js/jquery.appear.min.js"></script>
+    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-select.js"></script>
+    <script type="text/javascript" src="js/jquery.littlelightbox.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDyCxHyc8z9gMA5IlipXpt0c33Ajzqix4"></script>
+    <!-- Custom jQuery -->
+    <script type="text/javascript" src="js/sky.js"></script>
+    <script type="text/javascript" src="js/whatsup.js"></script>
+    <script>
+        $(function () {
+            $('#events-prev').on('click', function () {
+                $('#events-v2').trigger('prev.owl.carousel');
+            });
+            $('#events-next').on('click', function () {
+                $('#events-v2').trigger('next.owl.carousel');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
