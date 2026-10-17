@@ -426,8 +426,8 @@
         <div class="container">
             <div class="row padding-footer-mid">
                 
-                <!-- Column 1: Logo & Brief Description -->
-                <div class="col-xs-12 col-sm-6 col-md-3">
+                <!-- Column 1: Brand Logo -->
+                <div class="col-xs-12 col-sm-6 col-md-3 footer-col">
                     <div class="footer-logo list-content">
                         <a href="index.html" title="Darbaar Guest House">
                             <img src="images/Home+/darbaar_logo-footer.png" alt="Darbaar Guest House" class="img-responsive footer-brand-img">
@@ -436,7 +436,7 @@
                 </div>
 
                 <!-- Column 2: Quick Links -->
-                <div class="col-xs-6 col-sm-3 col-md-2 col-md-offset-1">
+                <div class="col-xs-12 col-sm-6 col-md-2 col-md-offset-1 footer-col">
                     <div class="list-content">
                         <h4 class="footer-heading">Quick Links</h4>
                         <ul class="footer-links">
@@ -444,26 +444,25 @@
                             <li><a href="room.html">Rooms & Rates</a></li>
                             <li><a href="services.html">Services</a></li>
                             <li><a href="gallery.html">Gallery</a></li>
-                            
                         </ul>
                     </div>
                 </div>
 
-                <!-- Column 3: Support & Policies -->
-                <div class="col-xs-6 col-sm-3 col-md-3">
+                <!-- Column 3: Support & Info -->
+                <div class="col-xs-12 col-sm-6 col-md-3 footer-col">
                     <div class="list-content">
                         <h4 class="footer-heading">Support & Info</h4>
                         <ul class="footer-links">
                             <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="about.html">About Us</a></li>
                             <li><a href="terms-conditions.html">Terms & Conditions</a></li>
                             <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                            
                         </ul>
                     </div>
                 </div>
 
-                <!-- Column 4: Contact & Direct Booking -->
-                <div class="col-xs-12 col-sm-6 col-md-3">
+                <!-- Column 4: Contact Us -->
+                <div class="col-xs-12 col-sm-6 col-md-3 footer-col">
                     <div class="list-content contact-info-widget">
                         <h4 class="footer-heading">Contact Us</h4>
                         <ul class="footer-contact-list">
@@ -481,48 +480,15 @@
 
             </div>
 
-            <!-- Floating Trigger Button -->
-<button class="quran-float-btn" id="openQuranModalBtn" aria-label="Open Quranic Reflections">
-    <i class="fa fa-book"></i> Spiritual Reflections
-</button>
-
-<!-- Quran Verses Modal -->
-<div id="quranModal" class="quran-modal-overlay">
-    <div class="quran-modal-container">
-        
-        <!-- Modal Header -->
-        <div class="quran-modal-header">
-            <div>
-                <h2>Verses from the Holy Quran</h2>
-            </div>
-            <button class="quran-modal-close" id="closeQuranModalBtn">&times;</button>
-        </div>
-
-        <!-- Language Selector Tabs -->
-        <div class="quran-lang-tabs">
-            <button class="lang-btn active" onclick="switchQuranLang('en')">English</button>
-            <button class="lang-btn" onclick="switchQuranLang('ar')">العربية</button>
-            <button class="lang-btn" onclick="switchQuranLang('ta')">தமிழ்</button>
-            <button class="lang-btn" onclick="switchQuranLang('ml')">മലയാളം</button>
-        </div>
-
-        <!-- Modal Body / Verses Container -->
-        <div class="quran-modal-body" id="quranVersesContainer">
-            <!-- Verses rendered dynamically via JavaScript -->
-        </div>
-
-    </div>
-</div>
-
             <!-- Footer Bottom Bar -->
             <div class="footer-bottom clearfix">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-7 text-left">
+                    <div class="col-xs-12 col-sm-7 text-left-md text-center-xs">
                         <p class="copyright-text">
                             Copyright © 2026 <strong>Darbaar Guest House</strong>. All Rights Reserved.
                         </p>
                     </div>
-                    <div class="col-xs-12 col-sm-5 text-right">
+                    <div class="col-xs-12 col-sm-5 text-right-md text-center-xs">
                         <p class="copyright-location">
                             Ervadi, Ramanathapuram, Tamil Nadu
                         </p>
@@ -533,6 +499,31 @@
         </div>
     </div>
 </footer>
+
+<!-- Floating Trigger Button & Modal (Placed outside footer to avoid grid interference) -->
+<button class="quran-float-btn" id="openQuranModalBtn" aria-label="Open Quranic Reflections">
+    <i class="fa fa-book"></i> Spiritual Reflections
+</button>
+
+<div id="quranModal" class="quran-modal-overlay">
+    <div class="quran-modal-container">
+        <div class="quran-modal-header">
+            <div>
+                <h2>Verses from the Holy Quran</h2>
+            </div>
+            <button class="quran-modal-close" id="closeQuranModalBtn">&times;</button>
+        </div>
+        <div class="quran-lang-tabs">
+            <button class="lang-btn active" onclick="switchQuranLang('en')">English</button>
+            <button class="lang-btn" onclick="switchQuranLang('ar')">العربية</button>
+            <button class="lang-btn" onclick="switchQuranLang('ta')">தமிழ்</button>
+            <button class="lang-btn" onclick="switchQuranLang('ml')">മലയാളം</button>
+        </div>
+        <div class="quran-modal-body" id="quranVersesContainer">
+            <!-- Verses rendered dynamically via JS -->
+        </div>
+    </div>
+</div>
     <!-- END / FOOTER-->
 
     <!--SCOLL TOP-->

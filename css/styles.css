@@ -257,7 +257,7 @@ th {
 }
 
 #rooms .owl-stage-outer .owl-stage .owl-item .item .col-lg-4.col-md-4.col-sm-6.col-xs-6 .wrap-box .rooms-content {
-  height: 190px;
+  height: auto;
 }
 
 /* Adjust spacing between navbar links */
@@ -1025,6 +1025,131 @@ th {
   width: 770px;
     height: 420px;
     object-fit: cover;
+}
+
+/* Footer Layout Base */
+.footer-sky {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding-top: 40px;
+}
+
+.footer-col {
+    margin-bottom: 30px;
+}
+
+.footer-logo img {
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Headings & Decorative Underline */
+.footer-heading {
+    position: relative;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.footer-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 35px;
+    height: 3px;
+    background-color: #d4af37; /* Gold accent */
+}
+
+/* Links & Lists */
+.footer-links, .footer-contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #d4af37;
+}
+
+.footer-contact-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #cccccc;
+    margin-bottom: 12px;
+}
+
+.text-gold {
+    color: #d4af37;
+}
+
+a:focus, a:focus-visible {
+  outline: 0 !important;
+}
+
+/* Mobile Responsiveness Adjustments (< 768px) */
+@media (max-width: 767px) {
+    .footer-col {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .footer-heading::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-logo img {
+        margin: 0 auto 15px auto;
+    }
+
+    .footer-contact-list li {
+        justify-content: center;
+    }
+
+    .text-center-xs {
+        text-align: center !important;
+        margin-bottom: 10px;
+    }
+
+    /* Adjust floating button position for small screens so it doesn't cover footer text */
+    .quran-float-btn {
+        bottom: 15px;
+        left: 15px;
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    .footer-sky {
+      padding-top: 0;
+    }
+
+    .footer-sky .footer-bottom {
+      line-height: 24px !important;
+    }
+
+    .copyright-text, .copyright-location {
+      text-align: left;
+      padding: 6px 0;
+    }
+
+    .padding-footer-mid div.col-md-offset-1, .padding-footer-mid div.col-md-offset-1 + div {
+      width: 50%;
+    }
 }
 
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
@@ -14736,7 +14861,7 @@ a {
   .footer-sky .footer-top .textbox .form-inline .form-group .input-group {
     width: 100%; }
   .footer-sky .footer-mid .padding-footer-mid {
-    padding: 15px 0px 40px 0px; }
+    padding: 15px 0px 0 0px; }
     .footer-sky .footer-mid .padding-footer-mid .col-xs-4 {
       width: 100%; }
     .footer-sky .footer-mid .padding-footer-mid .list-content ul li {
@@ -14941,7 +15066,8 @@ a {
       margin-top: 10px;
       margin-bottom: 5px; }
     .banner-tems .banner-content p {
-      font-size: 14px; }
+      font-size: 14px;
+    padding: 32px !important; }
 
   .check-out h2 {
     font-size: 16px; }
