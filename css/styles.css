@@ -1106,6 +1106,59 @@ a:focus, a:focus-visible {
   width: 270px;
 }
 
+/* Floating WhatsApp Button - Fixed Bottom Right */
+.whatsapp-float-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25d366;
+    color: #ffffff !important;
+    border-radius: 30px;
+    padding: 12px 20px;
+    font-weight: 700;
+    font-size: 14px;
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float-btn i {
+    font-size: 20px;
+}
+
+.whatsapp-float-btn:hover {
+    background-color: #1ebc57;
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.5);
+    color: #ffffff !important;
+}
+
+/* Mobile Responsiveness (< 768px) */
+@media (max-width: 767px) {
+    .whatsapp-float-btn {
+        bottom: 15px;
+        right: 15px;
+        padding: 10px 14px;
+        font-size: 12px;
+        border-radius: 50%; /* Converts to compact round icon on small screens to save space */
+        width: 48px;
+        height: 48px;
+        justify-content: center;
+    }
+
+    .whatsapp-float-btn .whatsapp-btn-text {
+        display: none; /* Hides text on mobile so both bottom buttons fit without overlapping */
+    }
+
+    .whatsapp-float-btn i {
+        font-size: 24px;
+    }
+}
+
 /* Mobile Responsiveness Adjustments (< 768px) */
 @media (max-width: 767px) {
     .footer-col {
@@ -13317,7 +13370,6 @@ button.close {
       transform: translate(-50%, -75%);
       display: block;
       width: 100%;
-    color: #1C2826;
   text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8); }
       .section-slider .item .carousel-caption h1 {
         font-size: 69px;
