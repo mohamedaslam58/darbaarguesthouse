@@ -7449,10 +7449,9 @@ button.close {
     .rooms .wrap-rooms .owl-carousel.owl-grab {
       cursor: auto; }
   .rooms .rooms-p {
-    color: #ABABAB;
-    font-weight: 300;
-    font-size: 18px;
-    width: 48%;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
     margin: 0 auto;
     margin-top: 15px; }
 
@@ -13270,7 +13269,7 @@ button.close {
         .section-slider.section-slider-v3 .owl-nav .owl-next {
           right: -5.3%; } }
   .section-slider .owl-nav {
-    display: block !important;
+    display: block;
     transition: all 0.3s ease-in-out;
     opacity: 0; }
     .section-slider .owl-nav .owl-prev {
