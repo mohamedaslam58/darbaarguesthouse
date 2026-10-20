@@ -722,3 +722,33 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+
+    $(document).ready(function(){
+        $("#gallery-carousel").owlCarousel({
+            loop: true,
+            margin: 15,
+            autoplay: true,
+            autoplayTimeout: 2500,
+            autoplayHoverPause: true,
+            dots: true,
+            nav: true, // Force navigation arrows
+            navText: [
+                '<span>&#10094;</span>', // Custom Unicode Left Arrow (no external font needed)
+                '<span>&#10095;</span>'  // Custom Unicode Right Arrow
+            ],
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false // Hides on mobile to keep layout clean
+                },
+                768: {
+                    items: 2,
+                    nav: true
+                },
+                1000: {
+                    items: 4,
+                    nav: true
+                }
+            }
+        });
+    });

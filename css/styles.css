@@ -1137,6 +1137,78 @@ a:focus, a:focus-visible {
     color: #ffffff !important;
 }
 
+/* Container Relative Positioning */
+.gallery-our-slider .container {
+    position: relative;
+}
+
+/* Force Owl Navigation Wrapper Display */
+.gallery-our-slider .owl-nav {
+    display: block !important;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Allows clicking through empty space */
+    z-index: 99;
+}
+
+/* Base Nav Buttons */
+.gallery-our-slider .owl-nav button.owl-prev,
+.gallery-our-slider .owl-nav button.owl-next {
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    pointer-events: auto !important; /* Re-enables clicking on arrows */
+    background: #0b5e36 !important; /* Emerald green */
+    color: #ffd700 !important; /* Gold arrow icon */
+    width: 45px !important;
+    height: 45px !important;
+    border-radius: 50% !important;
+    border: 2px solid #d4af37 !important;
+    font-size: 22px !important;
+    line-height: 40px !important;
+    text-align: center !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* Left & Right Position Adjustments */
+.gallery-our-slider .owl-nav button.owl-prev {
+    left: -20px !important; /* Positions slightly outside the grid on desktop */
+}
+
+.gallery-our-slider .owl-nav button.owl-next {
+    right: -20px !important;
+}
+
+/* Hover State */
+.gallery-our-slider .owl-nav button.owl-prev:hover,
+.gallery-our-slider .owl-nav button.owl-next:hover {
+    background: #d4af37 !important; /* Gold background */
+    color: #1a1a1a !important; /* Dark symbol */
+    transform: translateY(-50%) scale(1.1) !important;
+}
+
+.title-gallery {
+  font-size: 48px;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Mobile Screen Cleanup (< 768px) */
+@media (max-width: 767px) {
+    .gallery-our-slider .owl-nav {
+        display: none !important;
+    }
+}
+
 /* Mobile Responsiveness (< 768px) */
 @media (max-width: 767px) {
     .whatsapp-float-btn {
@@ -7035,7 +7107,7 @@ button.close {
       background: red;
       color: #ffffff; }
     .header-sky .navbar .navbar-nav li {
-      padding: 35px 25px; }
+      padding: 35px 24px; }
       .header-sky .navbar .navbar-nav li .caret {
         margin-left: 5px; }
       .header-sky .navbar .navbar-nav li:hover a {
