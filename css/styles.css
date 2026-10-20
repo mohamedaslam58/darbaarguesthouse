@@ -579,7 +579,7 @@ th {
 
 .copyright-text,
 .copyright-location {
-    font-size: 13px;
+    font-size: 14px;
     color: #888888;
     margin: 0;
 }
@@ -1099,6 +1099,11 @@ th {
 
 a:focus, a:focus-visible {
   outline: 0 !important;
+}
+
+.wb-img {
+  height: 180px;
+  width: 270px;
 }
 
 /* Mobile Responsiveness Adjustments (< 768px) */
@@ -6825,7 +6830,10 @@ button.close {
         background: transparent; }
     .header-sky .header-top .header-top-left {
       float: left;
-      color: #0B5E36; }
+      color: #0B5E36;
+    background: white;
+    border-radius: 8px;
+    padding-left: 8px; }
       .header-sky .header-top .header-top-left span {
         font-size: 12px;
         margin-right: 15px;
@@ -6833,6 +6841,9 @@ button.close {
         .header-sky .header-top .header-top-left span i {
           font-size: 15px;
           padding-right: 5px; }
+    .header-sky .header-top .header-top-left span a {
+      color: #0B5E36;
+    }
     .header-sky .header-top .header-top-right {
       float: right; }
       .header-sky .header-top .header-top-right .icon-v3-top {
@@ -7440,7 +7451,7 @@ button.close {
   .rooms .rooms-p {
     color: #ABABAB;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 18px;
     width: 48%;
     margin: 0 auto;
     margin-top: 15px; }
@@ -8240,7 +8251,7 @@ button.close {
     margin-top: 0; }
   .about .about-p {
     color: #333;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     margin-top: 0px;
     padding-right: 50px; }
@@ -13054,9 +13065,9 @@ button.close {
       .footer-sky .footer-mid .padding-footer-mid .list-content ul li {
         list-style: none;
         margin-bottom: 16px; }
-        .footer-sky .footer-mid .padding-footer-mid .list-content ul li a {
+        .footer-sky .footer-mid .padding-footer-mid .list-content ul li a, .footer-sky .footer-mid .padding-footer-mid .list-content ul li span {
           color: #ebebeb;
-          font-size: 14px;
+          font-size: 16px;
           font-weight: 400;
           font-family: 'Poppins', sans-serif; }
           .footer-sky .footer-mid .padding-footer-mid .list-content ul li a:hover {

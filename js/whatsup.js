@@ -4,7 +4,7 @@ function sendToWhatsApp() {
     var subject = document.getElementById("subject").value;
     var message = document.getElementById("message").value;
 
-    var whatsappNumber = "918883934739"; // 🔴 Replace with your number (country code + number)
+    var whatsappNumber = "918925143951"; // 🔴 Replace with your number (country code + number)
 
     var whatsappMessage =
         "Name: " + name + "%0A" +
@@ -55,7 +55,7 @@ function sendEnquiryToWhatsApp() {
     //     return;
     // }
 
-    var whatsappNumber = "918883934739"; // 🔴 your WhatsApp number
+    var whatsappNumber = "918925143951"; // 🔴 your WhatsApp number
 
     var message =
         "📍 *Room Enquiry* %0A%0A" +
