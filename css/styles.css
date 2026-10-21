@@ -1137,12 +1137,14 @@ a:focus, a:focus-visible {
     color: #ffffff !important;
 }
 
-/* Container Relative Positioning */
+/* Add padding to container so buttons have space outside cards */
 .gallery-our-slider .container {
     position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
-/* Force Owl Navigation Wrapper Display */
+/* Navigation Wrapper */
 .gallery-our-slider .owl-nav {
     display: block !important;
     position: absolute;
@@ -1150,49 +1152,47 @@ a:focus, a:focus-visible {
     left: 0;
     width: 100%;
     transform: translateY(-50%);
-    pointer-events: none; /* Allows clicking through empty space */
-    z-index: 99;
+    pointer-events: none;
+    z-index: 999;
 }
 
-/* Base Nav Buttons */
-.gallery-our-slider .owl-nav button.owl-prev,
-.gallery-our-slider .owl-nav button.owl-next {
+/* Target Owl Carousel Div Navigation Elements */
+.gallery-our-slider .owl-nav .owl-prev,
+.gallery-our-slider .owl-nav .owl-next {
     position: absolute !important;
     top: 50% !important;
     transform: translateY(-50%) !important;
-    pointer-events: auto !important; /* Re-enables clicking on arrows */
-    background: #0b5e36 !important; /* Emerald green */
+    pointer-events: auto !important;
+    background: #0b5e36 !important; /* Emerald green background */
     color: #ffd700 !important; /* Gold arrow icon */
-    width: 45px !important;
-    height: 45px !important;
+    width: 44px !important;
+    height: 44px !important;
     border-radius: 50% !important;
     border: 2px solid #d4af37 !important;
-    font-size: 22px !important;
-    line-height: 40px !important;
-    text-align: center !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25) !important;
     transition: all 0.3s ease !important;
     cursor: pointer !important;
-    padding: 0 !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
-/* Left & Right Position Adjustments */
-.gallery-our-slider .owl-nav button.owl-prev {
-    left: -20px !important; /* Positions slightly outside the grid on desktop */
+/* Position Left & Right Buttons Outside the Grid */
+.gallery-our-slider .owl-nav .owl-prev {
+    left: -10px !important;
 }
 
-.gallery-our-slider .owl-nav button.owl-next {
-    right: -20px !important;
+.gallery-our-slider .owl-nav .owl-next {
+    right: -10px !important;
 }
 
-/* Hover State */
-.gallery-our-slider .owl-nav button.owl-prev:hover,
-.gallery-our-slider .owl-nav button.owl-next:hover {
-    background: #d4af37 !important; /* Gold background */
-    color: #1a1a1a !important; /* Dark symbol */
+/* Hover Effect */
+.gallery-our-slider .owl-nav .owl-prev:hover,
+.gallery-our-slider .owl-nav .owl-next:hover {
+    background: #d4af37 !important;
+    color: #1a1a1a !important;
     transform: translateY(-50%) scale(1.1) !important;
 }
 
@@ -1307,8 +1307,16 @@ a:focus, a:focus-visible {
     }
 }
 
-/* Mobile Screen Cleanup (< 768px) */
+#gallery-carousel {
+  padding: 0 24px;
+}
+
+/* Hide on Mobile Viewports (< 767px) */
 @media (max-width: 767px) {
+    .gallery-our-slider .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .gallery-our-slider .owl-nav {
         display: none !important;
     }
