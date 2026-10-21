@@ -236,20 +236,30 @@ $(document).ready(function() {
     StatisticsCount();
 
     function StatisticsCount() {
-        if ($('.item .count').length) {
+    if ($('.item .count').length) {
 
-            $('.item').appear(function() {
+        $('.item').appear(function() {
+            var $countEl = $('.count', this);
+            var targetNum = parseInt($countEl.attr('data-target'), 10) || parseInt($countEl.html(), 10);
+            var finalDisplay = $countEl.attr('data-final') || $countEl.html();
 
-                var count_element = $('.count', this).html();
-                $(".count", this).countTo({
-                    from: 0,
-                    to: count_element,
-                    speed: 2000,
-                    refreshInterval: 50,
-                });
+            $countEl.countTo({
+                from: 0,
+                to: targetNum,
+                speed: 2500,
+                refreshInterval: 50,
+                formatter: function (value, options) {
+                    // Formats number with commas while counting (e.g., 1,250,000)
+                    return Math.floor(value).toLocaleString();
+                },
+                onComplete: function (value) {
+                    // Swaps to the compact display text once counting finishes (e.g., 4M+)
+                    $(this).html(finalDisplay);
+                }
             });
-        }
+        });
     }
+}
 
     /*click-hamburger*/
 
@@ -752,3 +762,24 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+
+    $(document).ready(function () {
+    // Listen for click/tap events across the entire document
+    $(document).on('click touchstart', function (event) {
+        var $navbarCollapse = $('.navbar-collapse');
+        var $navbarToggle = $('.navbar-toggle');
+
+        // Check if the menu is currently expanded/open
+        if ($navbarCollapse.hasClass('in') || $navbarCollapse.hasClass('show')) {
+            // Check if the click target is OUTSIDE both the collapsed menu and the toggle button
+            if (!$navbarCollapse.is(event.target) && 
+                $navbarCollapse.has(event.target).length === 0 && 
+                !$navbarToggle.is(event.target) && 
+                $navbarToggle.has(event.target).length === 0) {
+                
+                // Collapse the menu
+                $navbarCollapse.collapse('hide');
+            }
+        }
+    });
+});
