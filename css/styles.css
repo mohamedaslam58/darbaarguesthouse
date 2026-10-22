@@ -1291,6 +1291,107 @@ a:focus, a:focus-visible {
     margin: 0;
 }
 
+.sitemap-section {
+            padding: 60px 0;
+            background-color: #f9f9f9;
+        }
+        .sitemap-card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            border-top: 4px solid #0b5e36;
+        }
+        .sitemap-card h3 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #0b5e36;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        .sitemap-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sitemap-links li {
+            margin-bottom: 12px;
+        }
+        .sitemap-links li a {
+            color: #444444;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s ease;
+            display: flex;
+            align-items: center;
+        }
+        .sitemap-links li a:before {
+            content: "›";
+            color: #d4af37;
+            font-size: 18px;
+            margin-right: 8px;
+            font-weight: bold;
+        }
+        .sitemap-links li a:hover {
+            color: #0b5e36;
+            text-decoration: underline;
+        }
+
+        /* Footer Social Media Icons Layout */
+.footer-social-icons {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Individual Social Icon Circle */
+.footer-social-icons .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #d4af37; /* Gold icon color */
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Hover Animation & Colors */
+.footer-social-icons .social-icon:hover {
+    background-color: #d4af37; /* Gold background on hover */
+    color: #1a1a1a; /* Dark icon on hover */
+    border-color: #d4af37;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+}
+
+/* Mobile Center Alignment (< 768px) */
+@media (max-width: 767px) {
+    .footer-logo {
+        text-align: center;
+    }
+    .footer-brand-img {
+        margin: 0 auto;
+    }
+    .footer-social-icons {
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 580px) {
+  .footer-contact-list li {
+        justify-content: left !important;
+    }
+}
+
 /* Mobile Screen Stack Optimization (< 576px) */
 @media (max-width: 575px) {
     .specialty-card {
