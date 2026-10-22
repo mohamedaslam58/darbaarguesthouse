@@ -583,7 +583,7 @@ $(document).ready(function() {
 document.addEventListener("DOMContentLoaded", function () {
     // Get current page filename (e.g. "affordable-rooms-for-daily-rent-in-ervadi-dargah.html")
     var currentPath = window.location.pathname.split("/").pop();
-    if (currentPath === "") currentPath = "hotel-rooms-for-rent-in-ervadi-dargah.html"; // Default to hotel-rooms-for-rent-in-ervadi-dargah.html if at root
+    if (currentPath === "") currentPath = "index.html"; // Default to index.html if at root
 
     // Find all navigation links
     var navLinks = document.querySelectorAll(".navbar-nav li a");
