@@ -1396,6 +1396,7 @@ a:focus, a:focus-visible {
     display: block;
     width: 100%;
     line-height: 24px;
+    text-align: left;
 }
 
 .panel-group .panel-body,
@@ -15446,7 +15447,7 @@ a {
         width: 100%; }
 
   .banner-tems {
-    padding-top: 125px; }
+    padding-top: 125px !important; }
     .banner-tems .banner-content h2 {
       font-size: 20px;
       margin-top: 10px;
