@@ -1326,6 +1326,7 @@ a:focus, a:focus-visible {
             transition: color 0.2s ease;
             display: flex;
             align-items: center;
+            text-align: left;
         }
         .sitemap-links li a:before {
             content: "›";
